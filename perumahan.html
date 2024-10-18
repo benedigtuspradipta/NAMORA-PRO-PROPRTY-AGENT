@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROPERTY AGENT</title>
+    <link rel="stylesheet" href="perumahan.css">
+</head>
+<body>
+
+    <header>
+        <button id="toggle-dark-mode">🌙</button>
+        <div class="menu-container">
+            <div id="menu-toggle" class="menu-toggle">☰</div> <!-- Ikon hamburger -->
+            <nav id="menu" class="hidden">   
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart">Keranjang</a></li> <!-- Link ke keranjang -->
+                </ul>
+            </nav>
+        </div>
+        <div class="logo-container">
+            <img src="logoperum1.jpg" alt="Logo Penjualan Rumah" class="logo">
+    </header>
+
+    <main>
+        
+        <section id="home" class="content-section animate-section">
+            <h4>Selamat Datang di Penjualan Rumah</h4>
+            <p>Temukan rumah impian Anda dengan mudah bersama kami.</p>
+            <button onclick="addToCart('Rumah A')">Tambah ke Keranjang - Rumah A</button>
+            <button onclick="addToCart('Rumah B')">Tambah ke Keranjang - Rumah B</button>
+            
+    
+        </section>
+
+        <section id="about" class="content-section animate-section hidden">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah agen properti terbaik dengan pengalaman lebih dari 15 tahun.</p>
+            
+            
+        </section>
+
+        <section id="contact" class="content-section animate-section hidden">
+            <h2>Hubungi Kami</h2>
+            <p>Email: info@penjualanrumah.com | Telp: +62 812 3456 7890</p>
+        </section>
+
+        <section id="cart" class="content-section animate-section hidden">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-items"></ul>
+            <button id="checkout-button">Checkout</button>
+            
+        </section>
+
+        <section>
+            <button class="open-fixed-page" onclick="openFixedPage()">Shopping🛒</button>
+    <div class="fixed-page" id="fixedPage">
+            <h2>Fixed Scrollable Page</h2>
+            <p>This is a fixed page that can be scrolled.</p>
+        <button class="checkout-button" onclick="checkout()">Checkout🛍
+</button>
+            <!-- Menambahkan tombol pilihan -->
+        <div class="option-group">
+            <h3>Select an Option:</h3>
+            <div class="cart">
+            <label><input type="reset" name="option" value="option1"> Option 1</label>
+                <div class="cart-item">
+                    <span>Item 1</span>
+                    <button class="cart-button1" onclick="removeItem(this)">Remove🚮</button>
+                </div>
+               
+            <label><input type="reset" name="option" value="option2"> Option 2</label>
+            <div class="cart-item">
+                <span>Item 2</span>
+                <button class="cart-button2" onclick="removeItem(this)">Remove🚮</button>
+            </div>
+
+            <label><input type="reset" name="option" value="option3"> Option 3</label>
+            <div class="cart-item">
+                <span>Item 3</span>
+                <button class="cart-button3" onclick="removeItem(this)">Remove🚮</button>
+            </div>
+
+            <label><input type="reset" name="option" value="option4"> Option 4</label>
+            <div class="cart-item">
+                <span>Item 4</span>
+                <button class="cart-button4" onclick="removeItem(this)">Remove🚮</button>
+            </div>
+            <button class="close-fixed-page" onclick="closeFixedPage()">Close</button>
+        </div>
+
+        </section>
+        <section>
+            <h1> Selamat Datang di NAMORA PRO </h1>
+            <p>Temukan rumah impian Anda dengan mudah bersama kami.</p>
+        <section id="body-img2" class="content-section animate-section"></section>
+        <img src="img2.jpeg" alt="PROPERTY AGENT" class="body-img2">
+   <h3> Hunian strategis..?!!  Developer berpengalaman dan terpercaya, dengan harga terjangkau dan fasilitas lengkap untuk keluarga.</h3>
+   </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Penjualan Rumah. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="perumahan.JS"></script>
+</body>
+</html>
